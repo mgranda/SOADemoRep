@@ -5,8 +5,86 @@
     <artifactId>soaApp1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+	<properties>
+		<serverUrl>${serverUrl}</serverUrl>   
+		<user>${user}</user>
+		<password>${password}</password>
+	</properties>
     <modules>
-        <!-- Add project modules -->
+        <!-- Add project modules 
     	<module>soaProject1</module>
+    	<module>soaProject2</module> -->
+    	<module>soaProject3</module>
+    	<module>soaDemoSync</module>
     </modules>
+	<build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>properties-maven-plugin</artifactId>
+        <version>1.0.0</version>
+        <executions>
+          <execution>
+            <phase>initialize</phase>
+            <goals>
+              <goal>read-project-properties</goal>
+            </goals>
+            <configuration>
+              <files>
+                <file>Environment.properties</file>
+              </files>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <profiles>
+    <profile>
+      <id>serverConfig-dev</id>
+      <activation>
+        <property>
+          <name>env</name>
+          <value>dev</value>
+        </property>
+      </activation>
+      <properties>
+        <serverUrl>${dev.serverUrl}</serverUrl>
+		<user>${dev.user}</user>
+		<password>${dev.password}</password>
+      </properties>
+    </profile>
+	
+	<profile>
+      <id>serverConfig-sit</id>
+      <activation>
+        <property>
+          <name>env</name>
+          <value>sit</value>
+        </property>
+      </activation>
+      <properties>
+        <serverUrl>${sit.serverUrl}</serverUrl>
+		<user>${sit.user}</user>
+		<password>${sit.password}</password>
+      </properties>
+    </profile>
+ 
+    <profile>
+      <id>serverConfig-prod</id>
+      <activation>
+        <property>
+          <name>env</name>
+          <value>prod</value>
+        </property>
+      </activation>
+      <properties>
+        <serverUrl>${prod.serverUrl}</serverUrl>
+		<user>${prod.user}</user>
+		<password>${prod.password}</password>
+      </properties>
+    </profile>
+  </profiles>
+  
 </project>

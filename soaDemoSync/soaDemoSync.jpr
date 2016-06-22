@@ -65,41 +65,7 @@
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
       <string v="oracle.tip.tools.ide.ess.addin.ESSContentSetProvider/ess-content"/>
    </list>
-   <value n="defaultPackage" v=""/>
-   <hash n="oracle.ide.model.ResourcePaths">
-      <hash n="resourcesContentSet">
-         <list n="constituent-sets">
-            <hash>
-               <list n="pattern-filters">
-                  <string v="+**"/>
-               </list>
-               <list n="url-path">
-                  <url path="src/main/resources/"/>
-               </list>
-            </hash>
-            <hash>
-               <list n="pattern-filters">
-                  <string v="+**"/>
-               </list>
-               <list n="url-path">
-                  <url path="src/main/scripts/"/>
-               </list>
-            </hash>
-            <hash>
-               <list n="pattern-filters">
-                  <string v="+pom.xml"/>
-               </list>
-               <list n="url-path">
-                  <url path="."/>
-               </list>
-            </hash>
-         </list>
-         <list n="pattern-filters">
-            <string v="+*"/>
-         </list>
-         <list n="url-path"/>
-      </hash>
-   </hash>
+   <value n="defaultPackage" v="soademosync"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="Maven"/>
@@ -132,149 +98,13 @@
          <string v=".xsl"/>
          <string v=".exm"/>
          <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
-         <string v=".exm"/>
-         <string v=".xml"/>
       </list>
       <value n="internalEncoding" v="Cp1252"/>
       <value n="webIANAEncoding" v="windows-1252"/>
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="soaProject1">
+         <hash n="soaDemoSync">
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
@@ -349,21 +179,21 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/sca_soaProject1${composite.revision_id}.jar"/>
+            <url n="jarURL" path="deploy/sca_soaDemoSync${composite.revision_id}.jar"/>
             <value n="profileClass" v="oracle.tip.tools.ide.fabric.deploy.sar.SarProfile"/>
-            <value n="profileName" v="soaProject1"/>
+            <value n="profileName" v="soaDemoSync"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="soaProject1"/>
+         <string v="soaDemoSync"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
       <url n="pomfileURL" path="pom.xml"/>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="soaApp1-soaProject1-webapp"/>
-      <value n="j2eeWebContextRoot" v="soaApp1-soaProject1-context-root"/>
+      <value n="j2eeWebAppName" v="soaApp1-soaDemoSync-webapp"/>
+      <value n="j2eeWebContextRoot" v="soaApp1-soaDemoSync-context-root"/>
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
       <hash n="javaContentSet">
