@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="634" lt="630" ts="1488956938513" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1163"/>
+<httpSample t="613" lt="612" ts="1488956938687" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="1163"/>
+<httpSample t="412" lt="412" ts="1488956938890" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="1163"/>
+<httpSample t="253" lt="252" ts="1488956939087" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="1163"/>
+<httpSample t="173" lt="172" ts="1488956939167" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1163"/>
+<httpSample t="233" lt="232" ts="1488956939287" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="1163"/>
+<httpSample t="228" lt="228" ts="1488956939302" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-2" dt="text" by="1163"/>
+<httpSample t="1763" lt="1763" ts="1488956939304" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-3" dt="text" by="1163"/>
+<httpSample t="1717" lt="1717" ts="1488956939350" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-4" dt="text" by="1163"/>
+<httpSample t="2027" lt="2026" ts="1488956939521" s="true" lb="soaDemoSync" rc="200" rm="OK" tn="Thread Group 1-5" dt="text" by="1163"/>
+
+</testResults>

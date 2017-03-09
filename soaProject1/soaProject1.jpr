@@ -452,4 +452,5 @@
       </hash>
    </hash>
    <value n="SCA_BPEL_FOLDER_PROPERTY_NAME" v="BPEL/"/>
+   <value n="SOA_DVM_FOLDER_NAME" v=""/>
 </jpr:project>

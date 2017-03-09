@@ -1,0 +1,32 @@
+Status: FAILED
+Time Taken: 78580
+Size: 0
+Timestamp: Thu Jun 23 20:30:48 EDT 2016
+TestStep: process
+
+----------------- Messages ------------------------------
+java.net.SocketTimeoutException: Read timed out
+
+----------------- Properties ------------------------------
+Endpoint: http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soad="http://xmlns.oracle.com/soaApp1/soaDemoSync/soaDemoSync">
+   \r
+   <soapenv:Header/>
+   \r
+   <soapenv:Body>
+      \r
+      <soad:process>
+         \r
+         <soad:input>Suvankar</soad:input>
+         \r
+      </soad:process>
+      \r
+   </soapenv:Body>
+   \r
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+- missing response / garbage collected -

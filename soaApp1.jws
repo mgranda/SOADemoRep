@@ -25,10 +25,12 @@
       <string v="oracle.jdeveloper.model.PathsConfiguration/ResourceBundlesContentSet"/>
    </list>
    <list n="listOfChildren">
+      <hash><url n="URL" path="soaDemoMDS/soaDemoMDS.jpr"/></hash>
       <hash><url n="URL" path="soaDemoSync/soaDemoSync.jpr"/></hash>
       <hash><url n="URL" path="soaProject1/soaProject1.jpr"/></hash>
       <hash><url n="URL" path="soaProject2/soaProject2.jpr"/></hash>
       <hash><url n="URL" path="soaProject3/soaProject3.jpr"/></hash>
+      <hash><url n="URL" path="soaProjectDemo1/soaProjectDemo1.jpr"/></hash>
    </list>
    <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">
       <hash n="oracle.jdeveloper.maven.compiler.MavenConfiguration">

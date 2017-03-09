@@ -16,6 +16,8 @@
     	<module>soaProject2</module> -->
     	<module>soaProject3</module>
     	<module>soaDemoSync</module>
+    	<module>soaProjectDemo1</module>
+    	<module>soaDemoMDS</module>
     </modules>
 	<build>
     <plugins>

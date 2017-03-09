@@ -1,0 +1,14 @@
+2017-01-25 20:44:51,152 WARN  [SoapUI] Missing folder [C:\Oracle\Middleware\Oracle_Home\oracle_common\plugins\maven\com\oracle\maven\oracle-maven-sync\12.1.3\soaApp1\soaDemoSync\.\ext] for external libraries
+2017-01-25 20:44:51,877 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Suvankar\soapui-settings.xml]
+2017-01-25 20:44:52,877 WARN  [SoapUIProGroovyScriptEngineFactory] Missing scripts folder [C:\Oracle\Middleware\Oracle_Home\oracle_common\plugins\maven\com\oracle\maven\oracle-maven-sync\12.1.3\soaApp1\soaDemoSync\scripts]
+2017-01-25 20:44:54,716 INFO  [WsdlProject] Loaded project from [file:/C:/Oracle/Middleware/Oracle_Home/oracle_common/plugins/maven/com/oracle/maven/oracle-maven-sync/12.1.3/soaApp1/soaDemoSync/soaDemoSync-soapui-project.xml]
+2017-01-25 20:44:55,789 INFO  [TestSuitePropertiesModifier] Configuring test suite properties
+2017-01-25 20:44:55,789 INFO  [TestSuitePropertiesModifier] Test suite properties configuration done
+2017-01-25 20:44:55,795 INFO  [SoapUIProExtensionTestCaseRunner] Running SoapUI tests in project [soaDemoSync]
+2017-01-25 20:44:55,798 INFO  [SoapUIProExtensionTestCaseRunner] Running Project [soaDemoSync], runType = SEQUENTIAL
+2017-01-25 20:44:55,855 INFO  [SoapUIProExtensionTestCaseRunner] Running SoapUI testcase [process TestCase]
+2017-01-25 20:44:55,871 INFO  [SoapUIProExtensionTestCaseRunner] running step [process]
+2017-01-25 20:45:01,566 INFO  [SoapUIProExtensionTestCaseRunner] Assertion [Contains] has status VALID
+2017-01-25 20:45:01,570 INFO  [SoapUIProExtensionTestCaseRunner] Finished running SoapUI testcase [process TestCase], time taken: 5652ms, status: FINISHED
+2017-01-25 20:45:01,570 INFO  [SoapUIProExtensionTestCaseRunner] Project [soaDemoSync] finished with status [FINISHED] in 5761ms
+2017-01-25 20:45:03,193 INFO  [SoapUIProExtensionTestCaseRunner] Created report at file:/C:/Oracle/Middleware/Oracle_Home/oracle_common/plugins/maven/com/oracle/maven/oracle-maven-sync/12.1.3/soaApp1/soaDemoSync/target/junit-reports/index.html
