@@ -7,7 +7,7 @@
            the whole SOA Application, which may contain additional projects. 
         -->
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.redstack</groupId>
+    <groupId>com.cognizant</groupId>
     <artifactId>soaDemoSync</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>sar</packaging>
@@ -116,8 +116,52 @@
 					</execution>
 				</executions>
 			</plugin>
+			
+			<!-- Add for SOAP UI testing -->
+			<!--<plugin>
+			  <groupId>com.github.redfish4ktc.soapui</groupId>
+			  <artifactId>maven-soapui-extension-plugin</artifactId>
+			  <version>4.6.4.1</version>
+			  <executions>
+				<execution>
+				  <phase>pre-integration-test</phase>
+				  <goals>
+					<goal>test</goal>
+				  </goals>
+				</execution>
+			  </executions>
+			  <configuration>
+				<projectFile>soaDemoSync-soapui-project.xml</projectFile>
+				<junitReport>true</junitReport>
+				<outputFolder>target/junit-reports</outputFolder>
+			  </configuration>
+			</plugin>-->
+			
+			<!-- Add for Jmeter -->
+			<plugin>
+				<groupId>com.lazerycode.jmeter</groupId>
+				<artifactId>jmeter-maven-plugin</artifactId>
+				<version>1.9.0</version>
+				<executions>
+				<execution>
+				  <phase>pre-integration-test</phase>
+				  <goals>
+					<goal>jmeter</goal>
+				  </goals>
+				</execution>
+			  </executions>
+			</plugin>
+		
         </plugins>
     </build>
+	
+	<pluginRepositories>
+      <pluginRepository>
+        <id>smartbear-sweden-plugin-repository</id>
+        <url>http://www.soapui.org/repository/maven2/</url>
+      </pluginRepository>
+    </pluginRepositories>
+
 	
 	<profiles>
     <profile>

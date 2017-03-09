@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e9228e94-941f-4500-a532-b301fec5d524" activeEnvironment="Default" name="soaDemoSync" soapui-version="5.2.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="c09fadc5-7ace-47ac-aece-2f09fee2005c" wsaVersion="NONE" name="soaDemoSyncBinding" type="wsdl" bindingName="{http://xmlns.oracle.com/soaApp1/soaDemoSync/soaDemoSync}soaDemoSyncBinding" soapVersion="1_1" anonymous="optional" definition="http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep?WSDL"><con:part><con:url>http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="soaDemoSync" targetNamespace="http://xmlns.oracle.com/soaApp1/soaDemoSync/soaDemoSync" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/soaApp1/soaDemoSync/soaDemoSync" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:documentation>
+    <abstractWSDL>http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync!1.0/WSDLs/soaDemoSync.wsdl</abstractWSDL>
+  </wsdl:documentation>
+  <plnk:partnerLinkType name="soaDemoSync">
+    <plnk:role name="soaDemoSyncProvider" portType="client:soaDemoSync"/>
+  </plnk:partnerLinkType>
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://xmlns.oracle.com/soaApp1/soaDemoSync/soaDemoSync" schemaLocation="http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep?XSD=../Schemas/soaDemoSync.xsd"/>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="soaDemoSyncRequestMessage">
+    <wsdl:part name="payload" element="client:process"/>
+  </wsdl:message>
+  <wsdl:message name="soaDemoSyncResponseMessage">
+    <wsdl:part name="payload" element="client:processResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="soaDemoSync">
+    <wsdl:operation name="process">
+      <wsdl:input message="client:soaDemoSyncRequestMessage"/>
+      <wsdl:output message="client:soaDemoSyncResponseMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="soaDemoSyncBinding" type="client:soaDemoSync">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="process">
+      <soap:operation style="document" soapAction="process"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="soademosync_client_ep">
+    <wsdl:port name="soaDemoSync_pt" binding="client:soaDemoSyncBinding">
+      <soap:address location="http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep?XSD=../Schemas/soaDemoSync.xsd</con:url><con:content><![CDATA[<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/soaApp1/soaDemoSync/soaDemoSync" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="process">
+    <complexType>
+      <sequence>
+        <element name="input" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="processResponse">
+    <complexType>
+      <sequence>
+        <element name="result" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep</con:endpoint></con:endpoints><con:operation id="f40f0c70-0981-4064-9d0c-a85183c6bd32" isOneWay="false" action="process" name="process" bindingOperationName="process" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false"><con:settings/></con:operation></con:interface><con:testSuite id="6cf42f84-26d9-4ce2-8fbd-52573cac691e" name="soaDemoSyncBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3359dd4f-f316-4b82-a45e-167e7cbc4842" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="process TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="c2920ebc-6f76-4d04-8247-5d1d3dca442c" name="process"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>soaDemoSyncBinding</con:interface><con:operation>process</con:operation><con:request name="process" id="a35c5259-94dd-4611-b9e6-1c3569449c8a"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://Suvankar-PC:7101/soa-infra/services/default/soaDemoSync/soademosync_client_ep</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soad="http://xmlns.oracle.com/soaApp1/soaDemoSync/soaDemoSync">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <soad:process>\r
+         <soad:input>Suvankar</soad:input>\r
+      </soad:process>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="52d6f440-78fb-460f-9275-b73abb978e9a" name="Contains"><con:configuration><token>Hello</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="process" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
