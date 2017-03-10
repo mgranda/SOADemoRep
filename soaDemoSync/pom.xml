@@ -118,7 +118,7 @@
 			</plugin>
 			
 			<!-- Add for SOAP UI testing -->
-			<plugin>
+			<!--<plugin>
 			  <groupId>com.github.redfish4ktc.soapui</groupId>
 			  <artifactId>maven-soapui-extension-plugin</artifactId>
 			  <version>4.6.4.1</version>
@@ -135,10 +135,10 @@
 				<junitReport>true</junitReport>
 				<outputFolder>target/junit-reports</outputFolder>
 			  </configuration>
-			</plugin>
+			</plugin>-->
 			
 			<!-- Add for Jmeter -->
-			<!--<plugin>
+			<plugin>
 				<groupId>com.lazerycode.jmeter</groupId>
 				<artifactId>jmeter-maven-plugin</artifactId>
 				<version>1.9.0</version>
@@ -150,7 +150,7 @@
 				  </goals>
 				</execution>
 			  </executions>
-			</plugin>-->
+			</plugin>
 		
         </plugins>
     </build>
