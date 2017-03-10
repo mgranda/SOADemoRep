@@ -168,8 +168,8 @@
       <id>serverConfig-dev</id>
       <activation>
         <property>
-          <name>env</name>
-          <value>dev</value>
+          <name>Target Environment</name>
+          <value>Development</value>
         </property>
       </activation>
       <properties>
@@ -183,8 +183,8 @@
       <id>serverConfig-sit</id>
       <activation>
         <property>
-          <name>env</name>
-          <value>sit</value>
+          <name>Target Environment</name>
+          <value>Performance Test</value>
         </property>
       </activation>
       <properties>
@@ -198,8 +198,8 @@
       <id>serverConfig-prod</id>
       <activation>
         <property>
-          <name>env</name>
-          <value>prod</value>
+          <name>Target Environment</name>
+          <value>Production</value>
         </property>
       </activation>
       <properties>
